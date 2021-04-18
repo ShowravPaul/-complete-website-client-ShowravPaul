@@ -10,7 +10,7 @@ const DashboardMain = () => {
     const [admins, setAdmins] = useState([]); 
 
     useEffect(() => {
-        fetch('http://localhost:5000/admins')
+        fetch('https://the-green-nursery.herokuapp.com/admins')
             .then(response => response.json())
             .then(data => setAdmins(data))
     }, [])
