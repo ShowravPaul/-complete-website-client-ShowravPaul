@@ -15,7 +15,7 @@ const GiveReview = () => {
             numOfStar
         };
 
-        const url = `http://localhost:5000/addReview`;
+        const url = `https://the-green-nursery.herokuapp.com/addReview`;
 
         fetch(url, {
             method: 'POST',
