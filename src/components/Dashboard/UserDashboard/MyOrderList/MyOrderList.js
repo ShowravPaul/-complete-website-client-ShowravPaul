@@ -10,7 +10,7 @@ const MyOrderList = () => {
     setLoggedInUser(loggedInUser); // extra line, just for using it
 
     useEffect(() => {
-        fetch('http://localhost:5000/myOrderList?email=' + loggedInUser.email, {
+        fetch('https://the-green-nursery.herokuapp.com/myOrderList?email=' + loggedInUser.email, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
