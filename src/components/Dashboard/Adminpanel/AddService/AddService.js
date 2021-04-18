@@ -17,7 +17,7 @@ const AddService = () => {
             price: data.price
         };
 
-        const url = `http://localhost:5000/addService`;
+        const url = `https://the-green-nursery.herokuapp.com/addService`;
 
         fetch(url, {
             method: 'POST',
